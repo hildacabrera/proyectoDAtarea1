@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="funciones/funcion.js/"></script>
+    <title>Sistema de Biblioteca IUDigital</title>
+</head>
+
+<body>
+    <!--Crear Menu-->
+    <header>
+        <nav class="menu">
+            <div class="hamburger" onclick="mostrar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <label class="logo"><img src="imagenes/LOGO.png" alt="logo IUDIGITAL"></label>
+            <ul id="sliding_menu">
+                <li><span class="close" onclick="ocultar()">X</span> </span></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#">Catalogos</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Banner-->
+    <div class="banner">
+        <div class="centrar">
+            <div class="container fondo">
+                <h1>Catálogo de biblioteca</h1>
+                <div class="row">
+                    <div id="rojo" class="col-12 col-sm-4">
+                        <ul>
+                            <li><a href="AgregarLibros.html" target="_blank">Agregar Libros</a></li>
+                            <li><a href="ConsultarLibros.html" target="_blank">Consultar libros prestados</a></li>
+                            <li><a href="ConusltarDisponibles.html" target="_blank">Consultar libros disponibles</a></li>
+                            <li><a href="PrestarLibros.html" target="_blank">Prestar libros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
