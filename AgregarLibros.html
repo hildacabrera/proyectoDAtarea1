@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="funciones/funcion.js"></script>
+    <title>Sistema de Biblioteca IUDigital</title>
+</head>
+
+<body>
+    <!--Crear Menu-->
+    <header>
+        <nav class="menu">
+            <div class="hamburger" onclick="mostrar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <label class="logo"><img src="imagenes/LOGO.png" alt="logo IUDIGITAL"></label>
+            <ul id="sliding_menu">
+                <li><span class="close" onclick="ocultar()">X</span> </span></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#">Catalogos</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Banner-->
+    <div class="banner">
+        <div class="centrar">
+            <div class="container fondo">
+                <h1>Agregar libros</h1> <br>
+                <div class="row">
+                    <form name="AgregarLibros" id="AgregarLibros" accept-charset="UTF-8" action="#" method="post">
+                        <ul>
+                            <li>
+                                <label for="codigo">Codigo:</label>
+                                <input type="text" id="codigo" name="codigo" value="">
+                            </li><br>
+                            <li>
+                                <label for="titulo">Titulo:</label>
+                                <input type="text" id="titulo" name="titulo" value="">
+                            </li><br>
+                            <li>
+                                <label for="isbn">ISBN:</label>
+                                <input type="text" id="isbn" name="isbn" value="">
+                            </li><br>
+                            <li>
+                                <label for="editorial">Editorial:</label>
+                                <input type="text" id="editorial" name="editorial" value="">
+                            </li><br>
+                            <li>
+                                <label for="localizacion">Localizacion:</label>
+                                <input type="text" id="localizacion" name="localizacion" value="">
+                            </li><br>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="borrar">
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

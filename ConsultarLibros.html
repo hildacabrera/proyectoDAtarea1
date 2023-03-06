@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="funciones/funcion.js"></script>
+    <title>Sistema de Biblioteca IUDigital</title>
+</head>
+
+<body>
+    <!--Crear Menu-->
+    <header>
+        <nav class="menu">
+            <div class="hamburger" onclick="mostrar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <label class="logo"><img src="imagenes/LOGO.png" alt="logo IUDIGITAL"></label>
+            <ul id="sliding_menu">
+                <li><span class="close" onclick="ocultar()">X</span> </span></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#">Catalogos</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Banner-->
+    <div class="banner">
+        <div class="centrar">
+            <div class="container fondo">
+                <h1>Consultar libros prestados</h1> <br>
+                <div class="row">
+                    <form name="ConsultarLibros" id="ConsultarLibros" accept-charset="UTF-8" action="#" method="post">
+                        <ul>                        
+                            <li>
+                                <label for="titulo">Tipo de busqueda:</label>
+                                <select name="tipoBusqueda" id="tipoBusqueda" required="required">
+                                    <option value="" selected="selected" disabled="disabled">--- Seleccione una opcion ---</option>
+                                    <option value="codigo" > Codigo del libro </option>
+                                    <option value="editorial" > Editorial del libro </option>
+                                    <option value="autor" > Autor del libro </option>
+                                    <option value="ISBN" > ISBN </option>
+                                </select>
+                            </li><br>
+                            <li>
+                                <label for="informacion">Ingrese la información:</label>
+                                <input type="text" id="informacion" name="informacion" value="">
+                            </li><br>
+                                <input type="submit" value="Consultar">
+                                <input type="reset" value="borrar">
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
