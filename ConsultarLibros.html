@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <script type="text/javascript" src="funciones/funcion.js"></script>
+    <link href="CSS/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="CSS/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Sistema de Biblioteca IUDigital</title>
 </head>
 
@@ -47,20 +49,32 @@
                                     <option value="autor" > Autor del libro </option>
                                     <option value="ISBN" > ISBN </option>
                                 </select>
-                            </li><br>
-                            <li>
-                                <label for="informacion">Ingrese la información:</label>
-                                <input type="text" id="informacion" name="informacion" value="">
+                                <label for="titulo">Codigo:</label>
+                                <select name="codigoLibro" id="codigoLibro" required="required">
+                                    <option value="" selected="selected" disabled="disabled">--- Seleccione una opcion ---</option>
+                                    <option value="codigo" > COD01 </option>
+                                    <option value="editorial" > COD02 </option>
+                                    <option value="autor" > COD03</option>
+                                    <option value="ISBN" > COD04 </option>
+                                </select>
+                                <label for="titulo">Autor:</label>
+                                <select name="autor" id="autor" required="required">
+                                    <option value="" selected="selected" disabled="disabled">--- Seleccione una opcion ---</option>
+                                    <option value="codigo" > Julian</option>
+                                    <option value="editorial" > Freddy </option>
+                                    <option value="autor" > Matias</option>
+                                    <option value="ISBN" > Ivan </option>
+                                </select>
+                                
                             </li><br>
                                 <input type="submit" value="Consultar">
-                                <input type="reset" value="borrar">
+                                <input type="reset" value="borrar">                                
                         </ul>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
