@@ -55,5 +55,6 @@ require_once(dirname(__DIR__)."./Config/database.php");
             require_once (dirname(__DIR__)."./Views/page/indexAutor.php");
             //$this->index();
         }
+        
     }
 ?>

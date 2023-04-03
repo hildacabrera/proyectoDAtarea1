@@ -3,7 +3,7 @@
     require_once(dirname(__DIR__)."../../Controllers/EditorialController.php");
 ?>
 <h2>Página de Editoriales</h2>
-<a href="AgregarEditorial.php" class="btn btn-primary">Agregar Editorial</a>
+<a href="/Views/page/AgregarEditorial.php" class="btn btn-primary">Agregar Editorial</a>
 <br>
 <br>
 <div class="table-responsive">
@@ -24,8 +24,8 @@
                 echo "<tr>";
                     echo "<th>".$dato["codigoEditorial"]."</th>";
                     echo "<th>".$dato["nombreEditorial"]."</th>";
-                    echo "<th>Editar</th>";
-                    echo "<th><a href='EliminarEditorial.php?id=".$dato["codigoEditorial"]."'>Borrar</a></th>";
+                    echo "<th><a href='/Views/page/EditarEditorial.php?id=" . $dato["codigoEditorial"]."'>Editar</a></th>";
+                    echo "<th><a href='/Views/page/EliminarEditorial.php?id=".$dato["codigoEditorial"]."'>Borrar</a></th>";
                 echo "</tr>";
             }
             ?>

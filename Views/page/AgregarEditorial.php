@@ -7,7 +7,7 @@
     <div class="container fondo">
         <h1>Agregar Editorial</h1>
         
-        <form name="AgregarEditorial" method="POST" action="../../Controllers/indexController.php">
+        <form name="AgregarEditorial" id="AgregarEditorial"  method="POST" action="../../Controllers/indexController.php">
         
                     <div class="form-floating mb-3">
         

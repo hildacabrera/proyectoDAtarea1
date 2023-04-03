@@ -1,5 +1,6 @@
 <?php
-    require_once(dirname(__DIR__)."./layout/header.php");  
+    require_once(dirname(__DIR__)."./layout/header.php"); 
+    require_once(dirname(__DIR__) . "../../Controllers/EditorialController.php");
 ?>
 <div class="centrar">
     <div class="container fondo">
@@ -15,10 +16,14 @@
                         <input type="hidden" name="controller" value="autor">
                     </div>
                     <select name="editorial" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option selected>Seleccione editorial</option>
-                        <option value="1">Acantilado</option>
-                        <option value="2">Aguilar</option>
-                        <option value="3">Alfaguara</option>
+                    <option value="" selected="selected" disabled="disabled">--- Seleccionar ---</option>
+                        <?php
+                            $info = new EditorialController("","","","");
+                            $data = $info->index();
+                            foreach ($data["editoriales"] as $dato) {
+                                echo '<option value="'. $dato["codigoEditorial"] .'" > '. $dato["nombreEditorial"] .' </option>';
+                            }
+                            ?>
                     </select>           
                     <button type="submit" name="guardar" class="btn btn-outline-primary">Guardar</button>
                     <button type="reset" class="btn btn-outline-secondary">Limpiar</button>

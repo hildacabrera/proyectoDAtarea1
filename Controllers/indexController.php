@@ -5,8 +5,6 @@ require_once("LibroController.php");
 require_once("PrestamoController.php");
 
 
-
-
 //autor
     $opcion = $_POST['controller'];
     if($opcion == "autor"){
@@ -21,6 +19,13 @@ require_once("PrestamoController.php");
     if($opcion == "editorial"){
         $objeto = new EditorialController($_POST['codigo'], $_POST['nombre'], $_POST['guardar']);
     }
+    if($opcion == "updateeditorial"){
+    $objeto = new EditorialController($_POST['codigo'], $_POST['nombre'], "Actualizar");
+}
+   /* if ($opcion == "editorial"){
+        $actualizar = new EditorialController("","","");
+        $actualizar->editorial($_POST['codigoEditorial'], $_POST['nombreEditorial']);
+    }*/
 
 //libro
     $opcion = $_POST['controller'];
