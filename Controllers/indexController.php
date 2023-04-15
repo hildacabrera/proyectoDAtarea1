@@ -3,6 +3,7 @@ require_once("AutorController.php");
 require_once("EditorialController.php");
 require_once("LibroController.php");
 require_once("PrestamoController.php");
+require_once("UsuarioController.php");
 
 
 //autor
@@ -36,10 +37,14 @@ require_once("PrestamoController.php");
         $actualizar = new LibroController("","","","","","","","");
         $actualizar->editar($_POST['codigoLibro'], $_POST['titulo'], $_POST['isbn'], '112', $_POST['paginas'], 'COD1', $_POST['localizacion']);
     }
-//prestamo
-$opcion = $_POST['controller'];
-if($opcion == "prestamo"){
-    $objeto = new PrestamoController($_POST['codigoEjemplar'], $_POST['codigoUsuario'], $_POST['fechaPrestamo'], $_POST['fechaDevolucion'], $_POST['guardar']);
-}
-
+    //prestamo
+    $opcion = $_POST['controller'];
+    if($opcion == "prestamo"){
+        $objeto = new PrestamoController($_POST['codigoEjemplar'], $_POST['codigoUsuario'], $_POST['fechaPrestamo'], $_POST['fechaDevolucion'], $_POST['guardar']);
+    }
+    //Registrar usuario
+    $opcion = $_POST['controller'];
+    if($opcion == "usuario"){
+        $objeto = new UsuarioController($_POST['codigoUsuario'], $_POST['nombre'], $_POST['telefono'], $_POST['direccion'], $_POST['guardar']);
+    }
 ?>
