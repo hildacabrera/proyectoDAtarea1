@@ -6,8 +6,7 @@ require_once(dirname(__DIR__) . "./Views/layout/header.php");
         <h1>Catálogo de biblioteca</h1>
         <div class="row">
             <div id="rojo" class="col-12">
-                <ul>
-                    <li><a href="/Views/page/RegistrarUsuario.php">Registrar usuario</a></li>
+                <ul>                   
                     <li><a href="/Views/page/AgregarLibros.php">Agregar Libros</a></li>
                     <li><a href="/Views/page/AgregarEditorial.php">Agregar Editorial</a></li>
                     <li><a href="/Views/page/AgregarAutor.php">Agregar Autor</a></li>                  

@@ -28,6 +28,7 @@
                 <li><a href="/Views/page/catalogos.php">Catalogos</a></li>
                 <li><a href="/Views/page/colecciones.php">Colecciones</a></li>
                 <li><a href="/Views/page/servicios.php">Servicios</a></li>
+                <li><a href="/Views/page/RegistrarUsuario.php">Registrar usuario</a></li>
             </ul>
         </nav>
     </header>
